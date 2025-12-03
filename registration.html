@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Now – Elite League</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+  <div class="bg-waves">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+  </div>
+
+  <nav>
+    <div class="logo">
+    
+      <img src="../registration_form/assets/logo-top.png" alt="logo-top class="logo-photo">
+    </div>
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#agenda">AGENDA</a></li>
+      <li><a href="#why">WHY PARTICIPATING</a></li>
+      <li><a href="#mentors">MENTORS</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>REGISTER NOW</h1>
+    <p class="subtitle">WHAT ARE YOU WAITING FOR? UNLOCK YOUR SEAT. JOIN THE CHALLENGE.</p>
+
+    <form id="registrationForm" novalidate>
+      <div class="form-grid">
+        <div class="left-column">
+          <div class="input-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            <span class="error-message"></span>
+          </div>
+
+          <div class="input-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            <span class="error-message"></span>
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            <span class="error-message"></span>
+          </div>
+
+          <div class="input-group">
+            <label for="school">School/ University</label>
+            <select id="school" name="school" required>
+              <option value="">Select your school/ university</option>
+              <option value="usthb">USTHB</option>
+              <option value="esi">ESI</option>
+              <option value="enp">ENP</option>
+              <option value="ensia">ENSIA</option>
+              <option value="enstp">ENSTP</option>
+              <option value="algiers1">University of Algiers 1</option>
+              <option value="algiers2">University of Algiers 2</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="error-message"></span>
+          </div>
+
+          <div class="input-group">
+            <label for="year">Year of Study</label>
+            <select id="year" name="year" required>
+              <option value="">Select the year of study</option>
+              <option value="l1">L1 (1st Year License)</option>
+              <option value="l2">L2 (2nd Year License)</option>
+              <option value="l3">L3 (3rd Year License)</option>
+              <option value="m1">M1 (1st Year Master)</option>
+              <option value="m2">M2 (2nd Year Master)</option>
+              <option value="phd">PhD</option>
+            </select>
+            <span class="error-message"></span>
+          </div>
+
+          <div class="input-group">
+            <label for="team">Team</label>
+            <select id="team" name="team" required>
+              <option value="">Choose a team</option>
+              <option value="team1">Team 1</option>
+              <option value="team2">Team 2</option>
+              <option value="team3">Team 3</option>
+              <option value="team4">Team 4</option>
+            </select>
+            <span class="error-message"></span>
+          </div>
+        </div>
+
+        <div class="role-card">
+          <h2 class="role-title">Time to choose your Role!</h2>
+          <div class="characters">
+            
+            <img src="../registration_form/assets/among_us_character_red.svg" alt="character" class="character-img char1">
+            <img src="../registration_form/assets/among_us_character_purple.svg" alt="Character2" class="character-img char2">
+            <img src="../registration_form/assets/among_us_character_blue.svg" alt="character3" class="character-img char3">
+          </div>
+          <div class="role-descriptions">
+            <strong>Leader</strong>
+            You will have a card with your identity & serial number. You will lead the team and perform daily check‑ins, validate team work each day, and have a big impact during Leader's guessing phase.
+
+            <strong>Co-helper</strong>
+            Support the Leader in organizing team tasks and flow.
+
+            <strong>Problem Proposer</strong>
+            Design 3 problems over 3 days (AI / Cybersecurity).
+
+            <strong>Developer</strong>
+            Solve technical challenges and receive encrypted messages during the day.
+
+            <strong>Imposter</strong>
+            A strategic role — can deceive, assist, or sabotage. Hidden identity.
+          </div>
+        </div>
+      </div>
+
+      <div class="priority-section">
+        <h3>Role</h3>
+        <p class="priority-note">Roles will be secret information sent to your email. Do not trust anyone — the Imposter is among us!</p>
+        
+        <div class="role-header-row">
+          <span class="priority-label"></span>
+          <div class="role-label">Leader</div>
+          <div class="role-label">Co-Helper<br>(only 2)</div>
+          <div class="role-label">Dev<br>member<br>(only 3)</div>
+          <div class="role-label">Problem<br>Proposer</div>
+          <div class="role-label">Imposter</div>
+        </div>
+        
+        <div class="priority-row">
+          <span class="priority-label">Priority 1</span>
+          <div class="radio-cell"><input type="radio" name="priority1" value="leader" required></div>
+          <div class="radio-cell"><input type="radio" name="priority1" value="cohelper" required></div>
+          <div class="radio-cell"><input type="radio" name="priority1" value="dev" required></div>
+          <div class="radio-cell"><input type="radio" name="priority1" value="proposer" required></div>
+          <div class="radio-cell"><input type="radio" name="priority1" value="imposter" required></div>
+        </div>
+
+        <!-- Similarly for priority2..priority5 -->
+        <div class="priority-row">
+          <span class="priority-label">Priority 2</span>
+          <div class="radio-cell"><input type="radio" name="priority2" value="leader" required></div>
+          <div class="radio-cell"><input type="radio" name="priority2" value="cohelper" required></div>
+          <div class="radio-cell"><input type="radio" name="priority2" value="dev" required></div>
+          <div class="radio-cell"><input type="radio" name="priority2" value="proposer" required></div>
+          <div class="radio-cell"><input type="radio" name="priority2" value="imposter" required></div>
+        </div>
+
+        <div class="priority-row">
+          <span class="priority-label">Priority 3</span>
+          <div class="radio-cell"><input type="radio" name="priority3" value="leader" required></div>
+          <div class="radio-cell"><input type="radio" name="priority3" value="cohelper" required></div>
+          <div class="radio-cell"><input type="radio" name="priority3" value="dev" required></div>
+          <div class="radio-cell"><input type="radio" name="priority3" value="proposer" required></div>
+          <div class="radio-cell"><input type="radio" name="priority3" value="imposter" required></div>
+        </div>
+
+        <div class="priority-row">
+          <span class="priority-label">Priority 4</span>
+          <div class="radio-cell"><input type="radio" name="priority4" value="leader" required></div>
+          <div class="radio-cell"><input type="radio" name="priority4" value="cohelper" required></div>
+          <div class="radio-cell"><input type="radio" name="priority4" value="dev" required></div>
+          <div class="radio-cell"><input type="radio" name="priority4" value="proposer" required></div>
+          <div class="radio-cell"><input type="radio" name="priority4" value="imposter" required></div>
+        </div>
+
+        <div class="priority-row">
+          <span class="priority-label">Having a chance to be an Imposter</span>
+          <div class="radio-cell"><input type="radio" name="priority5" value="leader" required></div>
+          <div class="radio-cell"><input type="radio" name="priority5" value="cohelper" required></div>
+          <div class="radio-cell"><input type="radio" name="priority5" value="dev" required></div>
+          <div class="radio-cell"><input type="radio" name="priority5" value="proposer" required></div>
+          <div class="radio-cell"><input type="radio" name="priority5" value="imposter" required></div>
+        </div>
+      </div>
+
+      <div class="two-col-section">
+        <div class="input-group">
+          <label for="aiLevel">AI level</label>
+          <select id="aiLevel" name="aiLevel" required>
+            <option value="">Rate your skill level in AI</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+            <option value="expert">Expert</option>
+          </select>
+          <span class="error-message"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="cyberLevel">Cybersecurity level</label>
+          <select id="cyberLevel" name="cyberLevel" required>
+            <option value="">Rate your skill level in Cybersecurity</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+            <option value="expert">Expert</option>
+          </select>
+          <span class="error-message"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="previousHackathon">Have you participated in previous hackathons?</label>
+          <select id="previousHackathon" name="previousHackathon" required>
+            <option value="">Select yes or no</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+          <span class="error-message"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="experience">If Yes, briefly describe your experience</label>
+          <textarea id="experience" name="experience" rows="3" placeholder="Describe"></textarea>
+        </div>
+
+        <div class="input-group">
+          <label for="motivation">What motivates you the most in a competition?</label>
+          <select id="motivation" name="motivation" required>
+            <option value="">Select option</option>
+            <option value="learning">Learning new skills</option>
+            <option value="prizes">Winning prizes</option>
+            <option value="networking">Networking</option>
+            <option value="challenge">Challenge and competition</option>
+            <option value="fun">Having fun</option>
+          </select>
+          <span class="error-message"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="whyJoin">Why do you want to join The Elite League?</label>
+          <textarea id="whyJoin" name="whyJoin" rows="3" placeholder="Describe" required></textarea>
+          <span class="error-message"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="presence">Confirm your presence</label>
+          <select id="presence" name="presence" required>
+            <option value="">Select option</option>
+            <option value="confirmed">Confirmed − I will attend</option>
+            <option value="maybe">Maybe − Still deciding</option>
+            <option value="online">Online participation only</option>
+          </select>
+          <span class="error-message"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="additional">Anything else to add</label>
+          <textarea id="additional" name="additional" rows="3" placeholder="Feel free to share your ambitions and challenging spirit"></textarea>
+        </div>
+      </div>
+
+      <div class="submit-section">
+        <p class="rules-text">Be sure to read and follow the rules, respect the structure of your team !!</p>
+        <button type="submit" class="submit-btn">submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="registration.js"></script>
+</body>
+</html>
